@@ -3,3 +3,6 @@
 
 # database
 /src/database/*.sqlite
+
+# environment variables
+.env
