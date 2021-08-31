@@ -16,7 +16,7 @@ class CreateComplimentService {
     const userRepositories = getCustomRepository(UserRepositories);
 
     if(user_sender === user_receiver) {
-      throw new Error("Incorrect user receiver");
+      throw new Error("You can't send a compliment to yourself");
     }
 
     const userReceiverExists = await userRepositories.findOne(user_receiver);
